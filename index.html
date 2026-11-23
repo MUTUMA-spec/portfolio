@@ -150,7 +150,7 @@
         // forwards each submission to your account email. This endpoint is a
         // public form ID, not a secret. Never put API secrets in this file.
         // No CV, certificate, or private uploaded file is stored on this site.
-        endpoint: "",
+        endpoint: "https://formspree.io/f/maeoljrj",
         cooldownSeconds: 300,
         successMessage: "Request received. I'll review it and send the documents to your email."
         // For stronger spam protection, enable Formspree's reCAPTCHA or put a
@@ -5331,7 +5331,7 @@
           </aside>
 
           <div class="request-form-wrap">
-            <form class="request-form" id="requestForm" novalidate>
+            <form class="request-form" id="requestForm" action="https://formspree.io/f/maeoljrj" method="POST" novalidate>
               <div class="request-form-head">
                 <span>Secure request / 01</span>
                 <span>Encrypted in transit</span>
@@ -5356,21 +5356,21 @@
                 <legend class="request-legend">What do you need?</legend>
                 <div class="request-doc-options">
                   <label class="doc-choice">
-                    <input id="requestCv" type="checkbox" value="CV">
+                    <input id="requestCv" name="cv" type="checkbox" value="CV">
                     <span class="doc-choice-content">
                       <span class="doc-box" aria-hidden="true"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m2.5 6 2.3 2.3 4.7-5"/></svg></span>
                       CV
                     </span>
                   </label>
                   <label class="doc-choice">
-                    <input id="requestCerts" type="checkbox" value="Certifications / badges">
+                    <input id="requestCerts" name="certifications" type="checkbox" value="Certifications / badges">
                     <span class="doc-choice-content">
                       <span class="doc-box" aria-hidden="true"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m2.5 6 2.3 2.3 4.7-5"/></svg></span>
                       Certifications / badges
                     </span>
                   </label>
                   <label class="doc-choice">
-                    <input id="requestBoth" type="checkbox" value="Both">
+                    <input id="requestBoth" name="both" type="checkbox" value="Both">
                     <span class="doc-choice-content">
                       <span class="doc-box" aria-hidden="true"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m2.5 6 2.3 2.3 4.7-5"/></svg></span>
                       Both
